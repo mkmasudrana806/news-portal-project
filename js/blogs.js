@@ -13,6 +13,8 @@ document.getElementById('blogs').addEventListener('click', function(){
 //    location.href = "blogs.html";
 const blogsContaier = document.getElementById('blogs-container');
 const div = document.createElement('div');
+// here i dynamically this.innerHTML added, i could take another html and redirect to it,
+// same page shawing i am using dynamically innerhtml
 div.innerHTML = `
 <div class="variable-difference">
         <article>
