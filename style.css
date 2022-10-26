@@ -82,3 +82,6 @@ color: tomato;
 
 
 /* some text need to cursor setup for pointing  */
+.news, .blogs,a{
+  cursor: pointer;
+}
