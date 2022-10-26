@@ -188,10 +188,36 @@
       <!-- show news details modal section  -->
       <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
 <!-- Modal -->
-<section id="details-modal">
+<section>
+  <div class="modal fade" id="showDetailsModal" tabindex="-1" aria-labelledby="showDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1  class="modal-title fs-4" id="showDetailsModalLabel">Title: <span id="news-title"class="fs-5">
 
-    
+          </span></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <p><b>Author : </b><span id="author-name">
 
+        </span></p>
+        <p><b>Published Date: </b><span id="published-date"></span>
+        </p>
+        <hr>
+        <div id="news-thumbnail">
+
+        </div>
+          <p id="details-container">
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
       <!-- main section end  -->

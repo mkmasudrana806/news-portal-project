@@ -22,7 +22,7 @@ function dataShow(allNews, categoryName){
       newsDiv.innerHTML=`
       <div class="col-lg-3 col-md-5 col-sm-12 p-3">
       <img
-        style="width: 260px; height: 260px"
+        style="width: 260px; height: 100%;"
         class="rounded-4 w-100"
         src="${news.image_url}"
         alt=""
@@ -154,27 +154,19 @@ const loadingDetailsNews = (news_id) => {
 }
 
 const displayNewsDetails = (news) => {
-  console.log(news);
-  const detailsSection = document.getElementById('details-modal');
-  detailsSection.innerHTML=``;
-  const div = document.createElement('div');
-  div.innerHTML = `
-  <div class="modal fade" id="showDetailsModal" tabindex="-1" aria-labelledby="showDetailsModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="showDetailsModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-  detailsSection.appendChild(div);
+ 
+  const newsTitle = document.getElementById('news-title');
+  newsTitle.innerText =`${news.title}`;
+  const authorName = document.getElementById('author-name');
+  authorName.innerText =`${news.author.name? news.author.name:'Unknown Author'}`;
+  const publishedDate = document.getElementById('published-date')
+publishedDate.innerText = `${news.author.published_date? news.author.published_date:'Date is Not Avaialbe'}`;
+const newsThumbnail = document.getElementById('news-thumbnail');
+newsThumbnail.innerHTML =`
+<img style="width: 80%; height:300px;" src="${news.thumbnail_url}">
+`;
+newsThumbnail.style.display ='flex';
+newsThumbnail.style.justifyContent = 'center';
+const newsDetailsContainer = document.getElementById('details-container');
+newsDetailsContainer.innerText = `${news.details}`;
 }
