@@ -1,0 +1,33 @@
+/* padding and hover effect for all categories  */
+#all-categories a{
+  padding: 10px;
+}
+
+#all-categories a:hover{
+color: blue!important;
+background-color:#d5d5ff;
+}
+
+/* news descripting text ellipsis for one line and three line  */
+.text-elipsis-2{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+/* news information rating  */
+.star-1,.star-2,.star-3{
+color: tomato;
+}
+
+/* show details arrow hover effect  */
+#details{
+  padding: 5px 10px;
+}
+#details:hover{
+  border-radius: 10px;
+  background-color: rgba(100, 98, 102, 0.548);
+}
