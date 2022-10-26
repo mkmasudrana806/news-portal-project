@@ -1,12 +1,25 @@
 /* style for blogs page  */
+.variable-difference,.function-difference,.templetes-string,.array-methods{
+  margin-top: 100px;
+}
+.array-methods{
+  background-color: aliceblue;
+  padding: 10px;
+}
+.templetes-string{
+  background-color: cadetblue;
+  padding: 10px;
+}
+table{
+  width: 100%;
+}
+
 thead tr{
-height: 50px;
+height: max-content;
 text-align: center;
   background-color: #d5d5ff;
 }
-td{
-  padding: 10px;
-}
+
 tbody tr:nth-child(even){
   height: 80px;
   background-color:#fa8f6f28
@@ -15,6 +28,22 @@ tbody tr:nth-child(odd){
   height: 80px;
   background-color: #64646465;
 }
+td,th{
+  padding: 10px;
+}
+.news{
+  color: blue;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+
+.blogs{
+  color: gray;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+
+
 /* padding and hover effect for all categories  */
 #all-categories a{
   padding: 10px;
@@ -51,3 +80,5 @@ color: tomato;
   background-color: rgba(100, 98, 102, 0.548);
 }
 
+
+/* some text need to cursor setup for pointing  */

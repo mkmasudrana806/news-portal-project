@@ -19,8 +19,6 @@ const showCategories = (categories) => {
 
 loadingAllCategories(); // by default call
 
-
-
 // ******************* for understanding purpose,how my js file will  work,i am marking as steps-1,steps-2... ,means: steps-1 first complete, then steps-2, then steps-3.. *********************
 
 
@@ -152,8 +150,6 @@ if(targetText!='Home'){
 })
 
 
-
-
 // this is spinner funciton
 const toggleSpinner = (isLoading) => {
   const loaderSection = document.getElementById('spinner');
@@ -164,7 +160,6 @@ const toggleSpinner = (isLoading) => {
     loaderSection.classList.add('d-none');
   }
 }
-
 
 
 // ****************** step-1 details show *******************

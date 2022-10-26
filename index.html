@@ -34,8 +34,8 @@
                 ><span class="text-primary"> News</span></a
               >
               <div class="d-flex align-items-center">
-                <h5 class="me-3 mb-0 text-primary news">News</h5>
-                <h5 class="me-3 mb-0 text-secondary blogs">Blog</h5>
+                <h5 id="news" class="news">News</h5>
+                <h5 id="blogs" class="blogs">Blog</h5>
                 <img
                   class="rounded-pill"
                   src="images/photo1.png"
@@ -83,147 +83,10 @@
     </header>
     <!-- header section end  -->
 
-    <!-- main section start  -->
-    <main class="container">
-      <!-- blogs section, by defaul it will be none,when user click blog,then it will block  -->
-      <section>
-        <!-- Difference Between var, let and constant  -->
-        <div class="variable-difference">
-          <article>
-            <h3>Difference Between var, let And Const Keywords</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Var</th>
-                <th>Let</th>
-                <th>Const</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>The scope of a var variable is functional scope.</td>
-                <td>The scope of a let variable is block scope.</td>
-                <td>The scope of a const variable is block scope.</td>
-              </tr>
-              <tr>
-                <td>It can be updated and re-declared into the scope.</td>
-                <td>
-                  It can be updated but cannot be re-declared into the scope.
-                </td>
-                <td>It cannot be updated or re-declared into the scope.</td>
-              </tr>
-              <tr>
-                <td>It can be declared without initialization.</td>
-                <td>It can be declared without initialization.</td>
-                <td>It cannot be declared without initialization</td>
-              </tr>
-              <tr>
-                <td>
-                  It can be accessed without initialization as its default value
-                  is “undefined”.
-                </td>
-                <td>
-                  It cannot be accessed without initialization otherwise it will
-                  give ‘referenceError’.
-                </td>
-                <td>
-                  It cannot be accessed without initialization, as it cannot be
-                  declared without initialization.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          </article>
-        </div>
-
-        <!-- difference between arrow and regular funciton  -->
-        <div class="function-difference">
-          <article>
-            <h3>difference between arrow and regular funciton</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Arrow Funciton</th>
-                <th>Regular Funciton</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Arrow Funciton allows a developer to accomplish the same
-                  result with fewer lines of code and approximately half the
-                  typing.
-                </td>
-                <td>
-                  On The OtherHands, Regular Functon needs more line of codes
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Curly brackets aren’t required if only one expression is
-                  present: <br />
-                  <pre>let add = (x, y) => x + y;</pre>
-                </td>
-                <td>
-                  Curly brackets arenrequired although one expression is present
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  If there’s only one argument, then the parentheses are not
-                  required either: <br />
-                  <pre>let squareNum = x => x * x;</pre>
-                </td>
-                <td>
-                  If there’s only one argument, then the parentheses are
-                  required <br />
-                  <pre>squareNum(x){x*x}</pre>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          </article>
-        </div>
-<!-- why should we use templetes string  -->
-        <div class="templetes-string">
-          <article>
-            <h3>Why should you use template string?</h3>
-          <p>
-            Templates Strings are an alternative to string concatenation. They
-            allow variables to be injected into string literals to form fully
-            interpolated strings. They also honor newline characters and other
-            breaks within the string literal.
-          </p>
-          </article>
-        </div>
-        <!-- When to Use forEach(), map(), filter(), find(), and reduce() on JavaScript Arrays  -->
-        <div class="array-methods">
-          <article>
-            <h4>.forEach()</h4>
-            <p>
-              Function .forEach() is another form of just a plain for loop that can be used to iterate through array items. This case of a function is used for more complex arrays, for example, an array of objects with a lot of entries than just an array of integers.</p>
-          </article>
-          <article>
-            <h4>.map()</h4>
-            <p>
-              Function .map() is a manipulative function that can modify each element’s content in an array that it is called on. This function returns a new array with modified values, the array that it is called on will stay still. This function is useful for adding a little change to an already existing array, for example adding a property to an object or modifying it. Its construction and use are identical to the previous function .forEach() and both can be used interchangeably.</p>
-          </article>
-          <article>
-            <h4>.filter()</h4>
-            <p>
-              Function .filter() is a search function that returns all the elements that fulfil the assigned condition. You can search by simple terms, for example, that element is equal to a certain integer, or by more advanced terms, for example, searching for an object with certain property that is equal to something. Both examples have a very frequent use as a developer.
-              
-              This function returns an array of found results, if any, even if only 1 match is found. If a function does not find any match, it simply returns an empty array.</p>
-          </article>
-          <article>
-            <h4>.find()</h4>
-            <p>
-              Function .find() is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- welcome message by default  -->
+    <!-- ********************  main section start **************************  -->
+    <main id="main-container" class="container">
+      
+      <!-- ***********************  welcome message by default ****************  -->
       <section id="welcome-section">
         <div
           style="
@@ -247,7 +110,7 @@
           </div>
         </div>
       </section>
-      <!-- spinner  -->
+      <!-- **********************************  spinner ******************************** -->
       <section id="spinner" class="d-none">
         <div
           class="text-center d-flex justify-content-center align-items-center"
@@ -265,7 +128,7 @@
       <!-- category section start  -->
       <section id="news-container" class="mt-4"></section>
 
-      <!-- show news details modal section  -->
+      <!-- ****************************** show news details modal section ************************** -->
       <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
       <!-- Modal -->
       <section>
@@ -312,8 +175,8 @@
         </div>
       </section>
 
-      <!-- main section end  -->
     </main>
+    <!-- ************************ main section end ********************  -->
     <footer class="mt-4 p-4 bg-white">
       <p class="text-center text-secondary fs-5">Copyright 2022 Taja News</p>
     </footer>
@@ -326,6 +189,6 @@
 
     <!-- here is the javascript cennection  -->
     <script src="js/app.js"></script>
-    <script src="js/apiLoad.js"></script>
+    <script src="js/blogs.js"></script>
   </body>
 </html>
