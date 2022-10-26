@@ -1,3 +1,20 @@
+/* style for blogs page  */
+thead tr{
+height: 50px;
+text-align: center;
+  background-color: #d5d5ff;
+}
+td{
+  padding: 10px;
+}
+tbody tr:nth-child(even){
+  height: 80px;
+  background-color:#fa8f6f28
+}
+tbody tr:nth-child(odd){
+  height: 80px;
+  background-color: #64646465;
+}
 /* padding and hover effect for all categories  */
 #all-categories a{
   padding: 10px;
@@ -33,3 +50,4 @@ color: tomato;
   border-radius: 10px;
   background-color: rgba(100, 98, 102, 0.548);
 }
+

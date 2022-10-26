@@ -101,7 +101,7 @@ function dataShow(allNews, categoryName){
     div.style.color='blue';
     div.style.padding = '10px';
     div.innerHTML = `
-    <h5>${count} items Found For ${categoryName}</h5>
+    <h5>${count} news Found For ${categoryName}</h5>
     `;
     foundContainer.appendChild(div);
 }
@@ -147,8 +147,6 @@ if(targetText!='Home'){
       home.style.display='block';
       newsContainer.innerHTML = ``;
       const numOfNewsContainer = document.getElementById('numberOfnews');
-      // numOfNewsContainer.style.display = 'none';
-
      }
 // **************************** step-2 ***************************
 })

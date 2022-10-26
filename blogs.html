@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- blogs section, by defaul it will be none,when user click blog,then it will block  -->
+<section>
+    <div class="variable-difference">
+      <table>
+        <thead>
+          <tr>
+            <th>Let</th>
+            <th>Var</th>
+            <th>Const</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><h3>The scope of a var variable is functional scope.</h3></td>
+            <td>The scope of a let variable is block scope.</td>
+            <td>The scope of a const variable is block scope.</td>
+          </tr>
+          <tr>
+            <td>It can be updated and re-declared into the scope.</td>
+            <td>It can be updated but cannot be re-declared into the scope.</td>
+            <td>It cannot be updated or re-declared into the scope.</td>
+          </tr>
+          <tr>
+            <td>It can be declared without initialization.</td>
+            <td>It can be declared without initialization.</td>
+            <td>It cannot be declared without initialization</td>
+          </tr>
+          <tr>
+            <td>It can be accessed without initialization as its default value is “undefined”.</td>
+            <td>It cannot be accessed without initialization otherwise it will give ‘referenceError’.</td>
+            <td>It cannot be accessed without initialization, as it cannot be declared without initialization.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+</body>
+</html>

@@ -23,6 +23,7 @@
   <body class="bg-primary bg-opacity-10">
     <!-- header section start  -->
     <header class="container mt-4 rounded">
+    
       <!-- nav bar section start  -->
       <section>
         <div>
@@ -75,9 +76,7 @@
             <div
               id="all-categories"
               class="navbar-nav w-100 d-flex justify-content-between"
-            >
-             
-            </div>
+            ></div>
           </div>
         </div>
       </section>
@@ -87,13 +86,58 @@
 
     <!-- main section start  -->
     <main class="container">
+<!-- blogs section, by defaul it will be none,when user click blog,then it will block  -->
+<section>
+  <!-- Difference Between var, let and constant  -->
+  <div class="variable-difference">
+    <h2>Difference Between var, let And Const Keywords</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Var</th>
+          <th>Let</th>
+          <th>Const</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The scope of a var variable is functional scope.</td>
+          <td>The scope of a let variable is block scope.</td>
+          <td>The scope of a const variable is block scope.</td>
+        </tr>
+        <tr>
+          <td>It can be updated and re-declared into the scope.</td>
+          <td>It can be updated but cannot be re-declared into the scope.</td>
+          <td>It cannot be updated or re-declared into the scope.</td>
+        </tr>
+        <tr>
+          <td>It can be declared without initialization.</td>
+          <td>It can be declared without initialization.</td>
+          <td>It cannot be declared without initialization</td>
+        </tr>
+        <tr>
+          <td>It can be accessed without initialization as its default value is “undefined”.</td>
+          <td>It cannot be accessed without initialization otherwise it will give ‘referenceError’.</td>
+          <td>It cannot be accessed without initialization, as it cannot be declared without initialization.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  
+</section>
+
+      <!-- welcome message by default  -->
       <section id="welcome-section">
         <div
           style="
             height: 50vh;
             display: flex;
             justify-content: center;
-            align-items: center; ">
+            align-items: center;
+          "
+        >
           <div>
             <h1
               style="font-size: 60px; margin-bottom: 50px"
@@ -130,7 +174,13 @@
       <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
       <!-- Modal -->
       <section>
-        <div class="modal fade" id="showDetailsModal" tabindex="-1" aria-labelledby="showDetailsModalLabel" aria-hidden="true">
+        <div
+          class="modal fade"
+          id="showDetailsModal"
+          tabindex="-1"
+          aria-labelledby="showDetailsModalLabel"
+          aria-hidden="true"
+        >
           <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           >
