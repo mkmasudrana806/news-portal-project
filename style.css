@@ -1,6 +1,8 @@
 /* padding and hover effect for all categories  */
 #all-categories a{
   padding: 10px;
+  font-size: 20px;
+  color: gray;
 }
 
 #all-categories a:hover{

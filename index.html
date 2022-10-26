@@ -76,64 +76,7 @@
               id="all-categories"
               class="navbar-nav w-100 d-flex justify-content-between"
             >
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-                >Home</a
-              >
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-              >
-                Breaking News
-              </a>
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-              >
-                Regular News
-              </a>
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-              >
-                International News
-              </a>
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-                >Sports</a
-              >
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-              >
-                Entertainment
-              </a>
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-                >Culture</a
-              >
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-                >Arts</a
-              >
-              <a
-                class="text-secondary text-decoration-none fs-5"
-                class="nav-item"
-                href="#"
-                >All News</a
-              >
+             
             </div>
           </div>
         </div>
@@ -150,9 +93,7 @@
             height: 50vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-          "
-        >
+            align-items: center; ">
           <div>
             <h1
               style="font-size: 60px; margin-bottom: 50px"
@@ -187,38 +128,44 @@
 
       <!-- show news details modal section  -->
       <!-- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> -->
-<!-- Modal -->
-<section>
-  <div class="modal fade" id="showDetailsModal" tabindex="-1" aria-labelledby="showDetailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1  class="modal-title fs-4" id="showDetailsModalLabel">Title: <span id="news-title"class="fs-5">
-
-          </span></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Modal -->
+      <section>
+        <div class="modal fade" id="showDetailsModal" tabindex="-1" aria-labelledby="showDetailsModalLabel" aria-hidden="true">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-4" id="showDetailsModalLabel">
+                  Title: <span id="news-title" class="fs-5"> </span>
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p><b>Author : </b><span id="author-name"> </span></p>
+                <p><b>Published Date: </b><span id="published-date"></span></p>
+                <hr />
+                <div id="news-thumbnail"></div>
+                <p id="details-container"></p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-        <p><b>Author : </b><span id="author-name">
-
-        </span></p>
-        <p><b>Published Date: </b><span id="published-date"></span>
-        </p>
-        <hr>
-        <div id="news-thumbnail">
-
-        </div>
-          <p id="details-container">
-
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <!-- main section end  -->
     </main>

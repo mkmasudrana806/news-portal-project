@@ -1,3 +1,26 @@
+//************************** below code for showing  default all categories section will show ************************
+//function for loading all categories api
+const loadingAllCategories = () =>{
+  const url = `https://openapi.programming-hero.com/api/news/categories`;
+  fetch(url)
+  .then(res => res.json())
+  .then(data => showCategories(data.data.news_category))
+}
+// function for all categories show 
+const showCategories = (categories) => {
+  const allCategoriesSection = document.getElementById('all-categories');
+  for(const category of categories){
+    const a = document.createElement('a');
+    a.classList.add = ('text-secondary','text-decoration-none','fs-5','nav-item');
+    a.innerText = `${category.category_name}`;
+    allCategoriesSection.appendChild(a);
+  }
+}
+
+loadingAllCategories(); // by default call
+
+
+
 // ******************* for understanding purpose,how my js file will  work,i am marking as steps-1,steps-2... ,means: steps-1 first complete, then steps-2, then steps-3.. *********************
 
 
@@ -131,6 +154,8 @@ if(targetText!='Home'){
 })
 
 
+
+
 // this is spinner funciton
 const toggleSpinner = (isLoading) => {
   const loaderSection = document.getElementById('spinner');
@@ -145,7 +170,7 @@ const toggleSpinner = (isLoading) => {
 
 
 // ****************** step-1 details show *******************
-// when user click arrow Symbol, detials news api will loading 
+// when user click arrow Symbol, detials news api will loading(onclick function added in arrow symbol)
 const loadingDetailsNews = (news_id) => {
   const url = `https://openapi.programming-hero.com/api/news/${news_id}`;
   fetch(url)
@@ -153,6 +178,8 @@ const loadingDetailsNews = (news_id) => {
   .then(data => displayNewsDetails(data.data[0]));
 }
 
+// ****************** step-2 details show *******************
+// function for show details news 
 const displayNewsDetails = (news) => {
  
   const newsTitle = document.getElementById('news-title');
@@ -163,7 +190,7 @@ const displayNewsDetails = (news) => {
 publishedDate.innerText = `${news.author.published_date? news.author.published_date:'Date is Not Avaialbe'}`;
 const newsThumbnail = document.getElementById('news-thumbnail');
 newsThumbnail.innerHTML =`
-<img style="width: 80%; height:300px;" src="${news.thumbnail_url}">
+<img style="width: 90%; height:300px;" src="${news.thumbnail_url}">
 `;
 newsThumbnail.style.display ='flex';
 newsThumbnail.style.justifyContent = 'center';
